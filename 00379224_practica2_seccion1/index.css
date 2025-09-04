@@ -1,0 +1,49 @@
+/* Universal */
+* {
+  box-sizing: border-box;
+}
+
+/* Type or Tag */
+p {
+  margin-block: 1.5rem;
+}
+
+/* Classname */
+.class {
+  text-decoration: underline;
+}
+
+/* ID */
+#id {
+  font-family: monospace;
+}
+
+/* Relational */
+li:has(a) {
+  display: flex;
+}
+
+/* Descendant */
+header h1 {
+  /* Selects all Heading 1 */
+}
+
+/* Child */
+header > h1 {
+  /* Selects all Heading 1 */
+}
+
+/* General sibling */
+h1 ~ p {
+  /* Selects a Paragraph as sibling */
+}
+
+/* Adjacent sibling */
+h1 + p {
+  /* Selects a Paragraph immediately after h1 */
+}
+
+/* Chained */
+h1, p {
+  /* Selects both elements */
+}
